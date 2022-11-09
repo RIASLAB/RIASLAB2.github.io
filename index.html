@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<title>RIASLAB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<link rel="shortcut icon" href="images/favicon.ico">
+    
+	<!-- CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+    
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+    
+	<!-- SCRIPTS -->
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if IE]><html class="ie" lang="en"> <![endif]-->
+	
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+	<script src="js/superfish.min.js" type="text/javascript"></script>
+	<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+	<script src="js/owl.carousel.js" type="text/javascript"></script>
+	<script src="js/animate.js" type="text/javascript"></script>
+	<script src="js/jquery.BlackAndWhite.js"></script>
+	<script src="js/myscript.js" type="text/javascript"></script>
+	<script>
+		
+		//PrettyPhoto
+		jQuery(document).ready(function() {
+			$("a[rel^='prettyPhoto']").prettyPhoto();
+		});
+		
+		//BlackAndWhite
+		$(window).load(function(){
+			$('.client_img').BlackAndWhite({
+				hoverEffect : true, // default true
+				// set the path to BnWWorker.js for a superfast implementation
+				webworkerPath : false,
+				// for the images with a fluid width and height 
+				responsive:true,
+				// to invert the hover effect
+				invertHoverEffect: false,
+				// this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
+				intensity:1,
+				speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+					fadeIn: 300, // 200ms for fadeIn animations
+					fadeOut: 300 // 800ms for fadeOut animations
+				},
+				onImageReady:function(img) {
+					// this callback gets executed anytime an image is converted
+				}
+			});
+		});
+		
+	</script>
+    <style type="text/css">
+<!--
+.Estilo1 {font-size: 14px}
+.Estilo2 {
+	color: #000000;
+	font-size: 26px;
+}
+.Estilo4 {
+	font-size: large;
+	color: #000000;
+}
+.Estilo5 {font-size: 18px}
+-->
+    </style>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<img id="preloader" src="images/preloader.gif" alt="" />
+<!-- //PRELOADER -->
+<div class="preloader_hide">
+
+	<!-- PAGE -->
+	<div id="page">
+	
+		<!-- HEADER -->
+		<header>
+			
+			<!-- MENU BLOCK -->
+			<div class="menu_block">
+			
+				<!-- CONTAINER -->
+				<div class="container clearfix">
+					
+					<!-- LOGO -->
+					<div class="logo pull-left"><a href="index.html" ><img src="images/RIASLAB Logotipos.jpg" width="74" height="72"></a></div>
+					<!-- //LOGO -->
+					
+					<!-- SEARCH FORM -->
+					<div id="search-form" class="pull-right">
+						<form method="get" action="#">
+							<input type="text" name="Search" value="BUSCAR" onFocus="if (this.value == 'Search') this.value = '';" onBlur="if (this.value == '') this.value = 'Search';" />
+						</form>
+					</div><!-- SEARCH FORM -->
+					
+					<!-- MENU -->
+					<div class="pull-right">
+						<nav class="navmenu center">
+							<ul>
+								<li class="first active scroll_btn"><a href="#home" >INICIO</a></li>
+								<li class="scroll_btn"><a href="#about" >SOBRE NOSOTROS </a></li>
+								<li class="scroll_btn"><a href="#projects" >PRODUCTOS</a></li>
+								<li class="scroll_btn"><a href="#team" >EQUIPO</a></li>
+								<li class="scroll_btn"><a href="#news" >TESTIMONIOS</a></li>
+								<li class="scroll_btn last"><a href="#contacts" >CONTACTOS</a></li>
+							</ul>
+						</nav>
+					</div><!-- //MENU -->
+				</div><!-- //MENU BLOCK -->
+			</div><!-- //CONTAINER -->
+		</header><!-- //HEADER -->
+		
+		
+		<!-- HOME -->
+		<section id="home" class="padbot0">
+				
+			<!-- TOP SLIDER -->
+			<div class="flexslider top_slider">
+				<ul class="slides">
+				  <li class="slide1">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay2 FromTop">Bienvenidos a RIASLAB </p>
+							<p class="title2 captionDelay4 FromTop"></p>
+							<p class="title3 captionDelay6 FromTop"></p>
+							<p class="title4 captionDelay7 FromBottom">Esta es la pagina de nuestra empresa donde puedes disfrutar y adquir nuestros productos</p>
+						</div>
+				  <li class="slide2">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay6 FromLeft Estilo2 Estilo4">Nuestro Slogan</p>
+							<p class="title2 captionDelay4 FromLeft"></p>
+							<p class="title3 captionDelay2 FromLeft"></p>
+							<p class="title4 captionDelay7 FromLeft Estilo4">“Dañar el medio ambiente es dañarnos a nosotros mismo”</p>
+						</div>
+				  </li>
+				 
+					  <!-- VIDEO BACKGROUND -->
+					  <a id="P2" class="player" data-property="{videoURL:'tDvBwPzJ7dY',containment:'.top_slider .slide3',autoPlay:true, mute:true, startAt:0, opacity:1}" ></a>
+					  <!-- //VIDEO BACKGROUND -->
+				  </li>
+				</ul>
+			</div>
+			<div id="carousel">
+				<ul class="slides">
+					<li><img src="images/slider/slide1_bg.jpg" alt="" /></li>
+					<li><img src="images/slider/slide2_bg.jpg"></li>
+		        </ul>
+		  </div><!-- //TOP SLIDER -->
+		</section><!-- //HOME -->
+		
+		
+		<!-- ABOUT -->
+		<section id="about">
+			
+			<!-- SERVICES -->
+			<div class="services_block padbot40" data-appear-top-offset="-200" data-animated="fadeInUp">
+				
+				<!-- CONTAINER -->
+				<div class="container">
+				
+					<!-- ROW -->
+					<div class="row">
+					  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot30">
+					    
+								<p><a class="services_item" href="javascript:void(0);"><strong>RIASLAB</strong></a></p>
+								<a class="services_item" href="javascript:void(0);"><span class="Estilo1">
+								<div align="justify">Somos una empresa ecologica con una gran mision en el planeta</div>
+								</span></a> </div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot30">
+						  
+							  <p align="justify"><a class="services_item" href="javascript:void(0);"><strong>Mision</strong></a></p>
+							  <div align="justify"><a class="services_item" href="javascript:void(0);"><span>Implementar soluciones a los problemas ambientales por medio de la  elaboración de un productono que contribuya a este </span></a></div>
+							  <a class="services_item" href="javascript:void(0);"><span></span></a><a class="services_item" href="javascript:void(0);" >						  </a> </div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot30">
+						  
+								<p class="services_item"><a class="services_item" href="javascript:void(0);"><strong>Vision</strong></a></p>
+						  <p align="justify" class="Estilo1">Ser la mejor empresa fabricando un producto que le garantice a las personas la protección y conservación del  medio ambiente</p>
+					  <a class="services_item" href="javascript:void(0);" >						  </a> </div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ss-12 margbot30">
+						  
+								<p><a class="services_item" href="javascript:void(0);"><strong>Objetivo </strong></a></p>
+						        <div align="justify">
+						          <ul>
+						                <li class="Estilo1">Conservar el&nbsp;medio ambiente, controlar y restringir las actividades destructivas y contaminantes del medio  ambiente y así desarrollar acciones efectivas para la preservación de los  ecosistemas regionales y hábitats.</li>
+					              </ul>
+				          </div>
+				          <ul><li class="Estilo1"></li>
+					      </ul>
+					  <a class="services_item" href="javascript:void(0);" > </a> </div>
+					</div><!-- //ROW -->
+				</div><!-- //CONTAINER -->
+			</div><!-- //SERVICES -->
+			
+			<!-- CLEAN CODE -->
+			
+			
+			<!-- MULTI PURPOSE -->
+			<div class="purpose_block">
+				
+				<!-- CONTAINER -->
+				<div class="container">
+					
+					<!-- ROW -->
+					<div class="row">
+					
+						<div class="col-lg-7 col-md-7 col-sm-7" data-appear-top-offset="-200" data-animated="fadeInLeft">
+							<h2><strong>Importancia del uso de la crema dental </strong></h2>
+							<p align="justify">La pasta de dientes es nuestro compañera ideal para mantener la boca sana y limpia. Es muy importante que sepamos cual elegir, así como también lo hacemos con los cepillos de dientes.</p>
+							<p align="justify">Ten presente que el uso de la pasta de dientes de por sí no cuera, así que siempre recuerda ir al dentista de manera periódica para revisiones y tratamientos (cuando se necesiten). En el caso de existir un problema será el dentista el único en darte una solución..</p>
+							
+							
+					  </div>
+						
+						<div class="col-lg-5 col-md-5 col-sm-5 ipad_img_in" data-appear-top-offset="-200" data-animated="fadeInRight"> 
+						  <div align="center"><img src="images/img1.jpg" alt="" width="1926" height="2303" align="middle" class="item" /></div>
+						</div>
+					</div><!-- //ROW -->
+				</div><!-- //CONTAINER -->
+			</div><!-- //MULTI PURPOSE -->
+		</section><!-- //ABOUT -->
+		
+		
+		<!-- PROJECTS -->
+		<section id="projects" class="padbot20">
+		
+			<!-- CONTAINER -->
+			<div class="container">
+				<h2><strong>Productos</strong></h2>
+			</div><!-- //CONTAINER -->
+			
+				
+			<div class="projects-wrapper" data-appear-top-offset="-200" data-animated="fadeInUp">
+				<!-- PROJECTS SLIDER -->
+				<div class="owl-demo owl-carousel projects_slider">
+					
+					<!-- work1 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/1.jpg" alt="" />
+								<a class="zoom" href="images/works/1.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<div align="center"><a  >RIASLAB PRO</a>
+									      <span></span> </div>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work1 -->
+					
+					<!-- work2 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/2.jpg" alt="" />
+								<a class="zoom" href="images/works/2.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a  >RIASLAB RED</a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work2 -->
+					
+					<!-- work3 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/3.jpg" alt="" />
+								<a class="zoom" href="images/works/3.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a  >RIASLAB YELLOW</a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work3 -->
+					
+					<!-- work4 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/4.jpg" alt="" />
+								<a class="zoom" href="images/works/4.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a>RIASLAB BLACK AND WHITE</a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work4 -->
+					
+				
+					
+					
+					
+					
+				</div><!-- //PROJECTS SLIDER -->
+			</div>
+			
+			
+			<!-- OUR CLIENTS -->
+			<div class="our_clients">
+			
+				<!-- CONTAINER -->
+				<!-- CONTAINER -->
+				<table width="1538" height="101" border="0">
+                  <tr>
+                    <td width="386"><div align="center" class="Estilo5">Es una crema dental es muy beneficiosa para quitar las caries</div></td>
+                    <td width="398"><div align="center" class="Estilo5">Esta crema dental es una de las mas recomendada por profesionales ya que te permite curar de la macroglosia </div></td>
+                    <td width="390"><div align="center" class="Estilo5">Es una crema dental que te ayudara al blanqueamiento de los dientes </div></td>
+                    <td width="346"><div align="center"><span class="Estilo5">Esta crema dental es la mejor de nuestra empresa ya que cumple todas las funciones de las cremas pasadas </span></div></td>
+                  </tr>
+                </table>
+		  </div>
+			<!-- //OUR CLIENTS -->
+		</section><!-- //PROJECTS -->
+		
+		
+		<!-- TEAM -->
+		<section id="team">
+		
+			<!-- CONTAINER -->
+			<div class="container">
+				<h2><strong>Nuestro equipo </strong></h2>
+				
+				<!-- ROW -->
+				<div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
+						
+					<!-- TEAM SLIDER -->
+					<div class="owl-demo owl-carousel team_slider">
+				
+						<!-- crewman1 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/1.jpg" alt="" /></div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Jhon Edinson Riascos Labrada</p>
+										<span>Gerente</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="https://twitter.com/JhonRia8?t=sJWa72iKPS_hglVpKhhDuw&s=08" ><i class="fa fa-twitter"></i></a>
+									<a href="https://www.facebook.com/" ><i class="fa fa-facebook-square"></i></a>
+									<a href="https://instagram.com/jhonedinsonriascos?igshid=YmMyMTA2M2Y=" ><i class="fa fa-instagram"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman1 -->
+						
+						<!-- crewman2 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/2.jpg" alt="" /></div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Jhoselin Riascos Labrada</p>
+										<span>Directora de finanzas</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="https://instagram.com/jhoselinriascos?igshid=YmMyMTA2M2Y=" ><i class="fa fa-instagram"></i></a>
+									<a href="https://www.facebook.com/jhoselin.riascos" ><i class="fa fa-facebook-square"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman1 -->
+						
+						<!-- crewman3 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/3.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Maria del Pilar Labrada Nuñez</p>
+										<span>Marketing digital</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="https://instagram.com/labradanunes?igshid=YmMyMTA2M2Y=" ><i class="fa fa-instagram"></i></a>
+									<a href="https://www.facebook.com/pilar.labradanunes" ><i class="fa fa-facebook-square"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman3 -->
+						
+						
+					</div><!-- TEAM SLIDER -->
+				</div><!-- //ROW -->
+			</div><!-- //CONTAINER -->
+		</section><!-- //TEAM -->
+		
+		
+		<!-- NEWS -->
+		<section id="news">
+		
+			<!-- CONTAINER -->
+			<div class="container">
+				<h2><strong>Opiniones</strong>
+				  <!-- TESTIMONIALS -->
+				</h2>
+				<div class="testimonials" data-appear-top-offset="-200" data-animated="fadeInUp">
+						
+					<!-- TESTIMONIALS SLIDER -->
+					<div class="owl-demo owl-carousel testim_slider">
+						
+						<!-- TESTIMONIAL1 -->
+						<div class="item">
+							<div class="testim_content">“Las cremas poseen diferente sabores, los cuales las hacen muy completas y nos permiten que nuestra zona dental este a la perfeccion .”</div>
+							<div class="testim_author">—  Manuel Cardona, <b>Estudiante</b></div>
+						</div><!-- TESTIMONIAL1 -->
+						
+						<!-- TESTIMONIAL2 -->
+						<div class="item">
+							<div class="testim_content">“9 De cada 10 dentistas prefieren RIASLAB.”</div>
+							<div class="testim_author">—  Jose Fernando Yusti, <b>Odontologo </b></div>
+						</div><!-- TESTIMONIAL2 -->
+						
+						<!-- TESTIMONIAL3 -->
+						<div class="item">
+							<div class="testim_content">“Es una empresa multifuncional de cremas dentales que generan limpieza y un fresco sabor en la boca.”</div>
+							<div class="testim_author">—  Juan Jose Arana, <b>Arquitecto</b></div>
+						</div><!-- TESTIMONIAL3 -->
+					</div><!-- TESTIMONIALS SLIDER -->
+				</div><!-- //TESTIMONIALS -->
+				
+				<!-- RECENT POSTS -->
+				<div class="row recent_posts" data-appear-top-offset="-200" data-animated="fadeInUp">
+					<div class="col-lg-4 col-md-4 col-sm-4 padbot30 post_item_block">
+						<div class="post_item">
+							<div class="post_item_img"><img src="images/blog/1 (2).jpg" width="870" height="500"></div>
+							<div class="post_item_content">
+								<a class="title" href="blog-post.html" ></a>
+								<ul class="post_item_inf">
+									<li><a href="javascript:void(0);" >Manuel Cardona </a> |</li>
+									<li><a href="javascript:void(0);" >Estudiante</a> |</li>
+									<li><a href="javascript:void(0);" ></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 padbot30 post_item_block">
+						<div class="post_item">
+							<div class="post_item_img"><img src="images/blog/2.jpg" width="870" height="500"> </div>
+							<div class="post_item_content">
+								<a class="title" href="blog-post.html" ></a>
+								<ul class="post_item_inf">
+									<li><a href="javascript:void(0);" >Jose Fernando Yusti </a> |</li>
+									<li><a href="javascript:void(0);" >Odontologo</a> |</li>
+									<li><a href="javascript:void(0);" ></a></li>
+								</ul>
+						  </div>
+					  </div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 padbot30 post_item_block">
+						<div class="post_item">
+							<div class="post_item_img"><img src="images/blog/3 (2).jpg" width="870" height="500"></div>
+							<div class="post_item_content">
+								<a class="title" href="blog-post.html" ></a>
+								<ul class="post_item_inf">
+									<li><a href="javascript:void(0);" >Juan Jose Arana </a> |</li>
+									<li><a href="javascript:void(0);" >Arquitecto</a> |</li>
+									<li><a href="javascript:void(0);" ></a></li>
+								</ul>
+						  </div>
+						</div>
+					</div>
+				</div><!-- RECENT POSTS -->
+			</div><!-- //CONTAINER -->
+		</section><!-- //NEWS -->
+	</div><!-- //PAGE -->
+	
+	<!-- CONTACTS -->
+	<section id="contacts">
+	</section><!-- //CONTACTS -->
+	
+	<!-- FOOTER -->
+	<footer>
+			
+		<!-- CONTAINER -->
+		<div class="container">
+			
+			<!-- ROW -->
+			<div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
+				
+				<div class="col-lg-4 col-md-4 col-sm-6 padbot30">
+					<h4><strong>Noticias</strong></h4>
+					<div class="recent_posts_small clearfix">
+						<div class="post_item_img_small"><img src="images/blog/diez-usos-que-no-sabias-de-la-crema-dental-724830-0.jpg" width="360" height="231"></div>
+						<div class="post_item_content_small">
+							<a class="title" >Diez usos que no sabías de la crema dental</a>
+							<ul class="post_item_inf_small">
+								<li></li>
+							</ul>
+						</div>
+					</div>
+					<div class="recent_posts_small clearfix">
+						<div class="post_item_img_small"><img src="images/blog/esta-crema-dental-podria-prevenir-los-ataques-al-corazon-522861-0.jpg" width="360" height="231"></div>
+						<div class="post_item_content_small">
+							<a class="title" >Esta crema dental podría prevenir los ataques al corazón</a>
+							<ul class="post_item_inf_small">
+								<li></li>
+							</ul>
+						</div>
+					</div>
+					<div class="recent_posts_small clearfix">
+						<div class="post_item_img_small"><img src="images/blog/descarga.jpeg" width="310" height="163"></div>
+						<div class="post_item_content_small">
+							<a class="title"  >Esta crema dental es del futuro</a>
+							<ul class="post_item_inf_small">
+								<li></li>
+							</ul>
+						</div>
+				  </div>
+				</div>
+				
+				<div class="col-lg-4 col-md-4 col-sm-6 padbot30 foot_about_block">
+					<h4><strong>Sobre nosotros </strong></h4>
+					<p align="justify">Somos una empresa ecologica con una gran mision en el planeta.</p>
+					<p align="justify">Nuestra empresa eco amigable RIASLAB para ayudar al medio ambiente y ofrecer una calidad de producto a la sociedad con ingredientes que no son nocivos y que son completamente naturales.</p>
+					<ul class="social">
+						
+						
+						
+						<li><a href=https://www.google.com/maps/@3.3252923,-76.234718,3a,75y,213.91h,83.92t/data=!3m6!1e1!3m4!1sacCMPJ7Hso_SMlgT3HPFfg!2e0!7i13312!8i6656?hl=es" ><i class="map_show fa fa-map-marker"></i></a></li>
+					</ul>
+				</div>
+				
+				<div class="respond_clear"></div>
+				
+				<div class="col-lg-4 col-md-4 padbot30">
+					<h4><b>Contactate con nosotros </b></h4>
+					
+					<!-- CONTACT FORM -->
+					<div class="span9 contact_form">
+						<div id="note"></div>
+						<div id="fields">
+							<form id="contact-form-face" class="clearfix" action="#">
+								<input type="text" name="name" value="Nombre" onFocus="if (this.value == 'Name') this.value = '';" onBlur="if (this.value == '') this.value = 'Name';" />
+								<textarea name="message" onFocus="if (this.value == 'Message') this.value = '';" onBlur="if (this.value == '') this.value = 'Message';">Mensaje
+
+</textarea>
+								<input class="contact_btn" type="submit" value="enviar mensaje" />
+							</form>
+						</div>
+					</div><!-- //CONTACT FORM -->
+				</div>
+			</div><!-- //ROW -->
+		</div><!-- //CONTAINER -->
+	</footer><!-- //FOOTER -->
+	
+	
+	<!-- MAP -->
+	<div id="map">
+		<a class="map_hide" href="javascript:void(0);" ><i class="fa fa-angle-right"></i><i class="fa fa-angle-left"></i></a>
+		<iframe src="http://maps.google.com/maps?f=q&amp;give%20a%20hand=s_q&amp;hl=en&amp;geocode=&amp;q=london&amp;sll=37.0625,-95.677068&amp;sspn=42.631141,90.263672&amp;ie=UTF8&amp;hq=&amp;hnear=London,+United+Kingdom&amp;ll=51.500141,-0.126257&amp;spn=0.026448,0.039396&amp;z=14&amp;output=embed" ></iframe>
+	</div><!-- //MAP -->
+
+</div>
+</body>
+</html>
